@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply pb-4;
+}
+
+h1 {
+    @apply text-3xl font-bold mb-8 mt-4;
+}
+
+h2 {
+    @apply text-2xl mt-4 mb-4;
+}
+
+h3 {
+    @apply text-xl;
+}
+
+table {
+    @apply border rounded mx-auto min-w-full mb-8;
+}
+
+thead {
+    @apply border-b;
+}
+
+th, td {
+    @apply p-2;
+}
+
+th {
+    min-width: 128px;
+}
+
+a, .link {
+    @apply text-sky-600;
+}
+
+.container {
+    @apply mx-auto mt-8 mb-8;
+}
+
+button, input[type="submit"], .button {
+    @apply cursor-pointer inline-block bg-sky-600 hover:bg-sky-900 pt-2 pb-2 pr-4 pl-4 text-white rounded;
+}
+
+.error {
+    @apply bg-red-400 text-red-900 rounded pt-2 pb-2 pl-4 pr-4 mt-2 mb-2;
+}
+
+
+.success {
+    @apply bg-green-400 text-green-900 rounded pt-2 pb-2 pl-4 pr-4 mt-2 mb-2;
+}
